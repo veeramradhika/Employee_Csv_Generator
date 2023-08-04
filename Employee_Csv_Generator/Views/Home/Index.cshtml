@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "GPT-3 Response";
+}
+
+<h1>GPT-3 Response</h1>
+
+@using (Html.BeginForm("Get", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div>
+        <label for="prompt">Enter Prompt:</label>
+        <textarea id="prompt" name="prompt" rows="4" cols="50"></textarea>
+    </div>
+    <div>
+        <label for="file1">Upload CSV File 1:</label>
+        <input type="file" id="file1" name="file1" accept=".csv" />
+    </div>
+    <div>
+        <label for="file2">Upload CSV File 2:</label>
+        <input type="file" id="file2" name="file2" accept=".csv" />
+    </div>
+    <div>
+        <label for="filename">Filename:</label>
+        <input type="text" id="filename" name="filename" />
+    </div>
+    <div>
+        <input type="submit" value="Generate Response" />
+    </div>
+}
+
+@if (ViewBag.FileNames != null)
+{
+    <h3>Generated Files:</h3>
+    <ul>
+        @foreach (var fileName in ViewBag.FileNames)
+        {
+            <li>
+                @if (fileName.EndsWith(".csv"))
+                {
+                    <a href="@Url.Action("Download", "Home", new { fileName = fileName })">@fileName</a>
+                    
+               }
+                else if (fileName.EndsWith(".pdf"))
+                {
+                    <a href="@Url.Action("Download", "Home", new { fileName = fileName })">@fileName</a>
+                    
+        }
+            </li>
+        }
+    </ul>
+}

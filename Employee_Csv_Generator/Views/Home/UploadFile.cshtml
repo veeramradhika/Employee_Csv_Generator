@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "UploadFile";
+}
+
+<h1>Upload File</h1>
+
+@if (ViewBag.FileContent != null)
+{
+    <h3>Uploaded File Content:</h3>
+    <pre>@ViewBag.FileContent</pre>
+}

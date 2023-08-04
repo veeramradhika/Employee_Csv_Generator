@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Get";
+}
+
+<h1>Get</h1>
+
+@using (Html.BeginForm("Get", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <label for="prompt">Enter Prompt:</label>
+    <br />
+    <input type="text" name="prompt" id="prompt" />
+    <br />
+
+    <label for="file">Upload File:</label>
+    <br />
+    <input type="file" name="file" id="file" />
+    <br />
+
+    <label>Download Format:</label>
+    <br />
+    <input type="radio" name="downloadFormat" value="csv" checked />
+    
+       <Input type = "radio" name = "downloadFormat" value = "pdf" /> <br />
+
+
+       <input type = "submit" value = "Get Response" />
+}
+
+@if (ViewBag.Response != null)
+{
+    <h3>Generated Response:</h3>
+    <pre>@ViewBag.Response</pre>
+}
+
+@if (ViewBag.DownloadLink != null)
+{
+    <h3>Download Link:</h3>
+    @Html.Raw(ViewBag.DownloadLink)
+}
