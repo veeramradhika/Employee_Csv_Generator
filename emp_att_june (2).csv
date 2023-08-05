@@ -1,0 +1,15 @@
+Here is an example of 10 employees' attendance for the month of June 2021 in CSV file format:
+
+Employee ID,Name,Total working days,Total working hours,Designation,Type
+001,John Doe,22,176,Manager,Billable
+002,Jane Smith,20,160,Developer,Billable
+003,Michael Johnson,21,168,Designer,Non-billable
+004,Emily Brown,22,176,Developer,Billable
+005,David Wilson,20,160,Tester,Non-billable
+006,Sarah Davis,21,168,Manager,Billable
+007,Robert Taylor,22,176,Designer,Non-billable
+008,Olivia Anderson,20,160,Developer,Billable
+009,James Martinez,21,168,Tester,Non-billable
+010,Sophia Thompson,22,176,Manager,Billable
+
+Please note that the "Total working days" field represents the number of working days in June 2021 for each employee, and the "Total working hours" field is calculated by multiplying the "Total working days" by 8 hours per day. The "Designation" field represents the job title or role of each employee, and the "Type" field indicates whether the employee is billable or non-billable.

@@ -1,0 +1,20 @@
+prompt 1:
+
+generate 10 employees attendance for the month of June 2021, with fields consisting of Employee ID, Name,  Total working days (), total working hours
+(Total working days  * 8hrs/day), desgination(different types)  and type (some employees are billable and some are Non-billable). in a CSV file formatt
+
+emp_att_june (2).csv
+
+prompt 2:
+
+generate csv file with Calculation of following for billable employees in csv. Total billable hours - 8, Bill Rate - Varies on the basis of designation 
+(Software engg/senior software engineer/developer/ITConsultant) for month of june 2021 in csv file.
+
+billable_employees (4).csv
+
+prompt 3 :
+
+In csv file with Calculation percentage of employee productivity for both, the billable and non-billable employees. - add a bonus colomn and bonus of 15,000 to top 5 of each 
+billable employee and non billable employees
+formula:
+(Billable Productivity %= (Total Billable Hours / Total Hours Worked)*100 - Non-Billable Productivity % = (Total Non-Billable Hours / Total Hours Worked)*100) in csv 

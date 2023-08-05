@@ -1,0 +1,17 @@
+﻿Generated Response: Employee ID, Name, Total working days, Total working hours, Designation, Type, Billable Productivity %, Non-Billable Productivity %, Bonus
+001, John Doe, 22, 176, Manager, Billable, 100, 0, 15000
+002, Jane Smith, 20, 160, Developer, Billable, 100, 0, 15000
+003, Michael Johnson, 21, 168, Designer, Non-billable, 0, 100, 0
+004, Emily Brown, 22, 176, Developer, Billable, 100, 0, 15000
+005, David Wilson, 20, 160, Tester, Non-billable, 0, 100, 0
+006, Sarah Davis, 21, 168, Manager, Billable, 100, 0, 15000
+007, Robert Taylor, 22, 176, Designer, Non-billable, 0, 100, 0
+008, Olivia Anderson, 20, 160, Developer, Billable, 100, 0, 15000
+009, James Martinez, 21, 168, Tester, Non-billable, 0, 100, 0
+010, Sophia Thompson, 22, 176, Manager, Billable, 100, 0, 15000
+
+To calculate the billable productivity percentage, you can use the formula: (Total Billable Hours / Total Hours Worked) * 100.
+
+To calculate the non-billable productivity percentage, you can use the formula: (Total Non-Billable Hours / Total Hours Worked) * 100.
+
+The bonus column is added to provide a bonus of 15,000 to the top 5 billable and non-billable employees.

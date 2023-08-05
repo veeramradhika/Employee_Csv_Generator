@@ -1,0 +1,29 @@
+﻿Generated Response: To calculate the total billable hours and bill rate for the month of June 2021 for billable employees, you can use the following formula:
+
+Total billable hours = Total working days * 8
+
+Bill rate can vary based on the designation. For this example, let's assume the bill rates are as follows:
+
+- Manager: $50 per hour
+- Developer: $40 per hour
+- Software Engineer: $35 per hour
+- Senior Software Engineer: $45 per hour
+- IT Consultant: $55 per hour
+
+You can add two additional columns to the CSV file: "Total billable hours" and "Bill rate". Here is the updated CSV file:
+
+Employee ID, Name, Total working days, Total working hours, Designation, Type, Total billable hours, Bill rate
+001, John Doe, 22, 176, Manager, Billable, 176, $50
+002, Jane Smith, 20, 160, Developer, Billable, 160, $40
+003, Michael Johnson, 21, 168, Designer, Non-billable, N/A, N/A
+004, Emily Brown, 22, 176, Developer, Billable, 176, $40
+005, David Wilson, 20, 160, Tester, Non-billable, N/A, N/A
+006, Sarah Davis, 21, 168, Manager, Billable, 168, $50
+007, Robert Taylor, 22, 176, Designer, Non-billable, N/A, N/A
+008, Olivia Anderson, 20, 160, Developer, Billable, 160, $40
+009, James Martinez, 21, 168, Tester, Non-billable, N/A, N/A
+010, Sophia Thompson, 22, 176, Manager, Billable, 176, $50
+
+In this updated CSV file, the "Total billable hours" column is calculated by multiplying the "Total working days" by 8 for billable employees. The "Bill rate" column is filled with the respective bill rates based on the designation of each employee.
+
+Please note that the bill rates mentioned above are just examples and can vary in real-world scenarios.
